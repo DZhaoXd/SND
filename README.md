@@ -1,8 +1,7 @@
 # SND
 Stable Neighbor Denoising for Source-free Domain Adaptive Segmentation (CVPR-2024)
 
-:notebook_with_decorative_cover: For more information, please see our paper at **[`ARXIV`](http://arxiv.org/abs/2312.06331)**
-
+The code is being sorted out and will be open sourced soon.
 
 ## :speech_balloon: Comparison with various uncertainty estimation methods
 ![](./images/show.jpg)
