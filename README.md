@@ -20,20 +20,3 @@ einops  0.3.2
 Please see `requirements.txt` for all the other requirements.
 
 
-## Acknowledgement
-Many thanks to those wonderful work and the open-source code.
-- [DTST](https://github.com/DZhaoXd/DT-ST)
-## :speech_balloon: Citation
-
-If you use this code for your research, please cite our paper:
-```bibtex
-@misc{zhao2023semantic,
-      title={Semantic Connectivity-Driven Pseudo-labeling for Cross-domain Segmentation}, 
-      author={Dong Zhao and Ruizhi Yang and Shuang Wang and Qi Zang and Yang Hu and Licheng Jiao and Nicu Sebe and Zhun Zhong},
-      year={2023},
-      eprint={2312.06331},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-```
-
