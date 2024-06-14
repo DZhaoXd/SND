@@ -32,7 +32,6 @@ The data folder should be structured as follows:
 Pretrain models:
 - Download pretrained model on GTA5:  ([GTA5_DG](https://drive.google.com/file/d/1fZ1uAPxUxPaWQrjBwZ6qkwsY3n2odqYd/view?usp=drive_link)) 
 - Download pretrained model on  ([SYNTHIA_DG](https://drive.google.com/file/d/1_EhjzkcVClC_cjnar6r_tnpU3ZMB8nXG/view?usp=drive_link))
-- 
 Then, put these *.pth into the pretrain folder.
 
 ### Train
@@ -43,12 +42,12 @@ cp -r results/G2C_SND_WARM/ results/G2C_SND/
 ```
 SND:
 ```
-CUDA_VISIBLE_DEVICES=3 nohup python train_SND.py -cfg configs/deeplabv2_r101_SND_G2C_Full.yaml OUTPUT_DIR results/G2C_SND/ resume pretrain/G2C_model_iter020000.pth > logs/G2C_SND.file 2>&1 &\
+CUDA_VISIBLE_DEVICES=3 nohup python train_SND.py -cfg configs/deeplabv2_r101_SND_G2C.yaml OUTPUT_DIR results/G2C_SND/ resume pretrain/G2C_model_iter020000.pth > logs/G2C_SND.file 2>&1 &\
 ```
 
 Test:
 ```
-CUDA_VISIBLE_DEVICES=1 python test.py -cfg configs/deeplabv2_r101_SND_G2C_Full.yaml resume results/G2C_SND/
+CUDA_VISIBLE_DEVICES=1 python test.py -cfg configs/deeplabv2_r101_SND_G2C.yaml resume results/G2C_SND/
 ```
 
 
