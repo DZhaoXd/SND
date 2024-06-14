@@ -53,8 +53,7 @@ CUDA_VISIBLE_DEVICES=1 python test.py -cfg configs/deeplabv2_r101_SND_G2C_Full.y
 
 
 ### Acknowledge
-Some codes are adapted from  
-[[higher](https://github.com/JDAI-CV/FADA#classes-matter-a-fine-grained-adversarial-approach-to-cross-domain-semantic-segmentation-eccv-2020)  ](https://github.com/facebookresearch/higher)
+Some codes are adapted from  [higher](https://github.com/facebookresearch/higher)
 We thank them for their excellent projects.
 
 
