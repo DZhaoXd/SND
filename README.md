@@ -36,13 +36,21 @@ Then, put these *.pth into the pretrain folder.
 
 ### Train
 G2C-warm:
+```
 CUDA_VISIBLE_DEVICES=0 nohup python train_SND.py -cfg configs/deeplabv2_r101_dtst_G2C.yaml OUTPUT_DIR results/G2C_SND_WARM/ resume pretrain/G2C_model_iter020000.pth > logs/G2C_SND_WARM.file 2>&1 &
 cp -r results/G2C_SND_WARM/ results/G2C_SND/
+```
 DTU:
-CUDA_VISIBLE_DEVICES=3 nohup python train_SND.py -cfg configs/deeplabv2_r101_SND_G2C_Full.yaml OUTPUT_DIR results/G2C_SND/ resume pretrain/G2C_model_iter020000.pth > logs/G2C_SND.file 2>&1 &
+```
+CUDA_VISIBLE_DEVICES=3 nohup python train_SND.py -cfg configs/deeplabv2_r101_SND_G2C_Full.yaml OUTPUT_DIR results/G2C_SND/ resume pretrain/G2C_model_iter020000.pth > logs/G2C_SND.file 2>&1 &\
+```
 
 Test:
+```
 CUDA_VISIBLE_DEVICES=1 python test.py -cfg configs/deeplabv2_r101_SND_G2C_Full.yaml resume results/G2C_SND/
+```
+
+
 
 ### Acknowledge
 Some codes are adapted from  
